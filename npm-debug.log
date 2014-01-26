@@ -1,0 +1,831 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'geoip' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'geoip', null ]
+7 verbose cache add name=undefined spec="geoip" args=["geoip",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'geoip',
+8 verbose parsed url   path: 'geoip',
+8 verbose parsed url   href: 'geoip' }
+9 silly lockFile bf279f7b-geoip geoip
+10 verbose lock geoip C:\Users\Jonathan\AppData\Roaming\npm-cache\bf279f7b-geoip.lock
+11 silly lockFile bf279f7b-geoip geoip
+12 silly lockFile bf279f7b-geoip geoip
+13 verbose addNamed [ 'geoip', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 5bd2b521-geoip geoip@
+16 verbose lock geoip@ C:\Users\Jonathan\AppData\Roaming\npm-cache\5bd2b521-geoip.lock
+17 silly addNameRange { name: 'geoip', range: '*', hasData: false }
+18 verbose url raw geoip
+19 verbose url resolving [ 'https://registry.npmjs.org/', './geoip' ]
+20 verbose url resolved https://registry.npmjs.org/geoip
+21 info trying registry request attempt 1 at 13:57:00
+22 verbose etag "9SHKFE7XNVRPR0V6VQG5NXNTI"
+23 http GET https://registry.npmjs.org/geoip
+24 http 304 https://registry.npmjs.org/geoip
+25 silly registry.get cb [ 304,
+25 silly registry.get   { date: 'Sun, 26 Jan 2014 12:57:09 GMT',
+25 silly registry.get     server: 'Apache',
+25 silly registry.get     connection: 'Keep-Alive',
+25 silly registry.get     'keep-alive': 'timeout=10, max=50',
+25 silly registry.get     etag: '"9SHKFE7XNVRPR0V6VQG5NXNTI"',
+25 silly registry.get     vary: 'Accept' } ]
+26 verbose etag geoip from cache
+27 silly addNameRange number 2 { name: 'geoip', range: '*', hasData: true }
+28 silly addNameRange versions [ 'geoip',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.1-1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.3-1',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.4-1',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.4.2',
+28 silly addNameRange     '0.4.2-1',
+28 silly addNameRange     '0.4.2-2',
+28 silly addNameRange     '0.4.3',
+28 silly addNameRange     '0.4.4',
+28 silly addNameRange     '0.4.5',
+28 silly addNameRange     '0.4.6',
+28 silly addNameRange     '0.4.7',
+28 silly addNameRange     '0.4.8',
+28 silly addNameRange     '0.4.9',
+28 silly addNameRange     '0.4.10',
+28 silly addNameRange     '0.4.11',
+28 silly addNameRange     '0.4.0-beta1',
+28 silly addNameRange     '0.4.0-beta2',
+28 silly addNameRange     '0.4.0-rc',
+28 silly addNameRange     '0.4.0-final',
+28 silly addNameRange     '0.4.12',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1' ] ]
+29 verbose addNamed [ 'geoip', '0.5.1' ]
+30 verbose addNamed [ '0.5.1', '0.5.1' ]
+31 silly lockFile e2142b9d-geoip-0-5-1 geoip@0.5.1
+32 verbose lock geoip@0.5.1 C:\Users\Jonathan\AppData\Roaming\npm-cache\e2142b9d-geoip-0-5-1.lock
+33 silly lockFile e2142b9d-geoip-0-5-1 geoip@0.5.1
+34 silly lockFile e2142b9d-geoip-0-5-1 geoip@0.5.1
+35 silly lockFile 5bd2b521-geoip geoip@
+36 silly lockFile 5bd2b521-geoip geoip@
+37 silly resolved [ { name: 'geoip',
+37 silly resolved     description: 'GeoIP binding for node',
+37 silly resolved     version: '0.5.1',
+37 silly resolved     homepage: 'http://github.com/kuno/GeoIP',
+37 silly resolved     author:
+37 silly resolved      { name: 'Guan \'kuno\' Qing',
+37 silly resolved        email: 'neokuno at Gmail dot com' },
+37 silly resolved     contributors:
+37 silly resolved      [ [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object],
+37 silly resolved        [Object] ],
+37 silly resolved     dependencies: { nan: '~0.7.0', bindings: '~1.1.1', debug: '~0.7.4' },
+37 silly resolved     devDependencies: { mocha: '~1.14.0', chai: '~1.8.1', semver: '~2.2.1' },
+37 silly resolved     repository: { type: 'git', url: 'git://github.com/kuno/GeoIP.git' },
+37 silly resolved     keywords: [ 'geoip', 'geolocation' ],
+37 silly resolved     bugs: { url: 'http://github.com/kuno/GeoIP/issues' },
+37 silly resolved     main: 'index.js',
+37 silly resolved     directory:
+37 silly resolved      { src: './src',
+37 silly resolved        lib: './lib',
+37 silly resolved        test: './test',
+37 silly resolved        misc: './misc',
+37 silly resolved        sample: './sample',
+37 silly resolved        benchmark: './benchmark' },
+37 silly resolved     engine: { node: '>=0.8.0', npm: '1' },
+37 silly resolved     scripts:
+37 silly resolved      { build: 'make rebuild',
+37 silly resolved        test: 'make test',
+37 silly resolved        install: 'node-gyp rebuild' },
+37 silly resolved     licences: [ [Object] ],
+37 silly resolved     gypfile: true,
+37 silly resolved     readme: '__GeoIP binding for nodejs__\n\n[![NPM version](https://badge.fury.io/js/geoip.png)](http://badge.fury.io/js/geoip)\n[![Build status](https://secure.travis-ci.org/kuno/GeoIP.png)](http://travis-ci.org/kuno/GeoIP)\n[![Dependencies Status](https://david-dm.org/kuno/GeoIP.png)](https://david-dm.org/kuno/GeoIP)\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kuno/geoip/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n\nGet geolocation information based on domain or IP address.\n\n**Pure javascript implementation**\n\nIf you are looking for a pure javascript implementation, the [`node-geoip`](https://github.com/bluesmoon/node-geoip) maybe your choice.\n\n###Technical Architecture\n\n![new_architecture](https://github.com/kuno/GeoIP/raw/master/misc/new_architecture.png)\n\n###Memory leak issue\nAs up to the version 0.4.7 (commit [22dadd98646f75318412b54b3de90cc079d34b1d](https://github.com/kuno/GeoIP/commit/22dadd98646f75318412b54b3de90cc079d34b1d)), there will be some memory leak when new a object from GeoIP class.\n\nHere is the [report](https://gist.github.com/4357339), I\'ll update it frequently.\n\nFortunately, the number of leaked bytes is not huge, and you wont new a object very offen.\n\nIf you are willing to fix this but, please fork this project.\n\n###Need support special database?\nCorrently, this package supports the most common databases from MaxMind.\n\nBut, it still a lot of special databases out there.\n\nSince I am not a user of any product/service of maxmind, if you require this pacakge to support special db, please make sure you can delivery the testing db and the ip address/domain that can be used to against the db.\n\n\n##Installation\n\n### for nodejs >= 0.8.x\n\n    [sudo] npm install geoip [-g]\n\n### for nodejs 0.6.x\n\n    [sudo] npm install geoip@0.4.5 [-g]\n\n### for nodejs 0.4.x\n\n    [sudo] npm install geoip@0.4.4 [-g]\n\n### for nodejs older than 0.4.0\n\nFrom v0.4.0, geoip need nodejs >= 0.4.0, if you want to use it on old nodejs, you can:\n\n    npm install geoip@0.3.4-1\n\n\n##Usage\n\nSee [usage doc](./USAGE.md).\n',
+37 silly resolved     readmeFilename: 'README.md',
+37 silly resolved     _id: 'geoip@0.5.1',
+37 silly resolved     _from: 'geoip@' } ]
+38 info install geoip@0.5.1 into C:\Users\Jonathan\Desktop\Node.js\InstagramLocation
+39 info installOne geoip@0.5.1
+40 info C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip unbuild
+41 verbose tar unpack C:\Users\Jonathan\AppData\Roaming\npm-cache\geoip\0.5.1\package.tgz
+42 silly lockFile e1773423-agramLocation-node-modules-geoip tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+43 verbose lock tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip C:\Users\Jonathan\AppData\Roaming\npm-cache\e1773423-agramLocation-node-modules-geoip.lock
+44 silly lockFile 0e389a4e-pm-cache-geoip-0-5-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\geoip\0.5.1\package.tgz
+45 verbose lock tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\geoip\0.5.1\package.tgz C:\Users\Jonathan\AppData\Roaming\npm-cache\0e389a4e-pm-cache-geoip-0-5-1-package-tgz.lock
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+49 silly gunzTarPerm extractEntry .npmignore
+50 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+51 silly gunzTarPerm extractEntry README.md
+52 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+53 silly gunzTarPerm extractEntry LICENCE
+54 silly gunzTarPerm modified mode [ 'LICENCE', 438, 420 ]
+55 silly gunzTarPerm extractEntry index.js
+56 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+57 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/.npmignore
+58 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/.npmignore', 438, 420 ]
+59 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/README.md
+60 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/README.md', 438, 420 ]
+61 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/LICENSE
+62 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/LICENSE', 438, 420 ]
+63 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/AUTHORS
+64 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/AUTHORS', 438, 420 ]
+65 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/bootstrap
+66 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/bootstrap', 438, 420 ]
+67 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/ChangeLog
+68 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/ChangeLog', 438, 420 ]
+69 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/configure.ac
+70 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/configure.ac', 438, 420 ]
+71 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/COPYING
+72 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/COPYING', 438, 420 ]
+73 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/dev-bin/uncrustify-all.sh
+74 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/dev-bin/uncrustify-all.sh', 438, 420 ]
+75 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/geoip.ico
+76 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/geoip.ico', 438, 420 ]
+77 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/geoip.pc.in
+78 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/geoip.pc.in', 438, 420 ]
+79 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/GeoIP.spec.in
+80 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/GeoIP.spec.in', 438, 420 ]
+81 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/GeoIPWinDLL.patch
+82 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/GeoIPWinDLL.patch', 438, 420 ]
+83 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/get_ver.awk
+84 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/get_ver.awk', 438, 420 ]
+85 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/INSTALL
+86 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/INSTALL', 438, 420 ]
+87 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/GeoIP.c
+88 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/GeoIP.c', 438, 420 ]
+89 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/GeoIP.h
+90 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/GeoIP.h', 438, 420 ]
+91 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/GeoIPCity.c
+92 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/GeoIPCity.c', 438, 420 ]
+93 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/GeoIPCity.h
+94 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/GeoIPCity.h', 438, 420 ]
+95 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/GeoIP_deprecated.c
+96 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/GeoIP_deprecated.c',
+96 silly gunzTarPerm   438,
+96 silly gunzTarPerm   420 ]
+97 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/GeoIP_internal.h
+98 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/GeoIP_internal.h', 438, 420 ]
+99 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/Makefile.am
+100 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/Makefile.am', 438, 420 ]
+101 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/Makefile.vc
+102 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/Makefile.vc', 438, 420 ]
+103 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/regionName.c
+104 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/regionName.c', 438, 420 ]
+105 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libGeoIP/timeZone.c
+106 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libGeoIP/timeZone.c', 438, 420 ]
+107 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/.uncrustify.cfg
+108 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/.uncrustify.cfg', 438, 420 ]
+109 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/TODO
+110 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/TODO', 438, 420 ]
+111 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/Makefile.am
+112 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/Makefile.am', 438, 420 ]
+113 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/Makefile.netware
+114 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/Makefile.netware', 438, 420 ]
+115 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/Makefile.vc
+116 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/Makefile.vc', 438, 420 ]
+117 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/Makefile.win32
+118 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/Makefile.win32', 438, 420 ]
+119 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/man/geoiplookup.1.in
+120 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/man/geoiplookup.1.in', 438, 420 ]
+121 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/man/geoiplookup6.1.in
+122 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/man/geoiplookup6.1.in', 438, 420 ]
+123 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/man/Makefile.am
+124 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/man/Makefile.am', 438, 420 ]
+125 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/NEWS
+126 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/NEWS', 438, 420 ]
+127 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/apps/geoiplookup.c
+128 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/apps/geoiplookup.c', 438, 420 ]
+129 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/apps/geoiplookup6.c
+130 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/apps/geoiplookup6.c', 438, 420 ]
+131 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/apps/Makefile.am
+132 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/apps/Makefile.am', 438, 420 ]
+133 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/apps/Makefile.vc
+134 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/apps/Makefile.vc', 438, 420 ]
+135 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/README.MinGW
+136 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/README.MinGW', 438, 420 ]
+137 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/README.OSX
+138 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/README.OSX', 438, 420 ]
+139 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/READMEwin32.txt
+140 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/READMEwin32.txt', 438, 420 ]
+141 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/READMEwin32static.txt
+142 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/READMEwin32static.txt', 438, 420 ]
+143 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/regioncode/fips10_4.txt
+144 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/regioncode/fips10_4.txt', 438, 420 ]
+145 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/regioncode/generate_regionName.pl
+146 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/regioncode/generate_regionName.pl',
+146 silly gunzTarPerm   438,
+146 silly gunzTarPerm   420 ]
+147 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/regioncode/iso3166_2.txt
+148 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/regioncode/iso3166_2.txt', 438, 420 ]
+149 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/regioncode/update-region-codes.pl
+150 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/regioncode/update-region-codes.pl',
+150 silly gunzTarPerm   438,
+150 silly gunzTarPerm   420 ]
+151 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/region_test.txt
+152 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/region_test.txt', 438, 420 ]
+153 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/benchmark.c
+154 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/benchmark.c', 438, 420 ]
+155 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/country_test.txt
+156 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/country_test.txt', 438, 420 ]
+157 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/country_test2.txt
+158 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/country_test2.txt', 438, 420 ]
+159 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/country_test_name.txt
+160 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/country_test_name.txt', 438, 420 ]
+161 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/fail_test.txt
+162 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/fail_test.txt', 438, 420 ]
+163 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/Makefile.am
+164 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/Makefile.am', 438, 420 ]
+165 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/Makefile.vc
+166 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/Makefile.vc', 438, 420 ]
+167 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/proxy_test.txt
+168 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/proxy_test.txt', 438, 420 ]
+169 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/city_test.txt
+170 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/city_test.txt', 438, 420 ]
+171 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-asnum.c
+172 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-asnum.c', 438, 420 ]
+173 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-city.c
+174 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-city.c', 438, 420 ]
+175 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-domain.c
+176 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-domain.c', 438, 420 ]
+177 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-isp.c
+178 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-isp.c', 438, 420 ]
+179 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-netspeed.c
+180 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-netspeed.c', 438, 420 ]
+181 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-org.c
+182 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-org.c', 438, 420 ]
+183 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip-region.c
+184 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip-region.c', 438, 420 ]
+185 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/test/test-geoip.c
+186 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/test/test-geoip.c', 438, 420 ]
+187 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/timezone/generate_timeZone.pl
+188 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/timezone/generate_timeZone.pl',
+188 silly gunzTarPerm   438,
+188 silly gunzTarPerm   420 ]
+189 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/timezone/timezone.txt
+190 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/timezone/timezone.txt', 438, 420 ]
+191 silly gunzTarPerm extractEntry deps/geoip-api-c-1.6.0/libgeoip.gypi
+192 silly gunzTarPerm modified mode [ 'deps/geoip-api-c-1.6.0/libgeoip.gypi', 438, 420 ]
+193 silly gunzTarPerm extractEntry lib/city.js
+194 silly gunzTarPerm modified mode [ 'lib/city.js', 438, 420 ]
+195 silly gunzTarPerm extractEntry lib/city6.js
+196 silly gunzTarPerm modified mode [ 'lib/city6.js', 438, 420 ]
+197 silly gunzTarPerm extractEntry lib/country.js
+198 silly gunzTarPerm modified mode [ 'lib/country.js', 438, 420 ]
+199 silly gunzTarPerm extractEntry lib/country6.js
+200 silly gunzTarPerm modified mode [ 'lib/country6.js', 438, 420 ]
+201 silly gunzTarPerm extractEntry lib/helper.js
+202 silly gunzTarPerm modified mode [ 'lib/helper.js', 438, 420 ]
+203 silly gunzTarPerm extractEntry lib/netspeed.js
+204 silly gunzTarPerm modified mode [ 'lib/netspeed.js', 438, 420 ]
+205 silly gunzTarPerm extractEntry lib/netspeedcell.js
+206 silly gunzTarPerm modified mode [ 'lib/netspeedcell.js', 438, 420 ]
+207 silly gunzTarPerm extractEntry lib/org.js
+208 silly gunzTarPerm modified mode [ 'lib/org.js', 438, 420 ]
+209 silly gunzTarPerm extractEntry lib/region.js
+210 silly gunzTarPerm modified mode [ 'lib/region.js', 438, 420 ]
+211 silly gunzTarPerm extractEntry lib/utils.js
+212 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 420 ]
+213 silly gunzTarPerm extractEntry binding.gyp
+214 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+215 silly gunzTarPerm extractEntry Makefile
+216 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+217 silly gunzTarPerm extractEntry HISTORY.md
+218 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+219 silly gunzTarPerm extractEntry cli/bootstrap.sh
+220 silly gunzTarPerm modified mode [ 'cli/bootstrap.sh', 438, 420 ]
+221 silly gunzTarPerm extractEntry cli/install_memwatch.sh
+222 silly gunzTarPerm modified mode [ 'cli/install_memwatch.sh', 438, 420 ]
+223 silly gunzTarPerm extractEntry src/init.h
+224 silly gunzTarPerm modified mode [ 'src/init.h', 438, 420 ]
+225 silly gunzTarPerm extractEntry src/city.cc
+226 silly gunzTarPerm modified mode [ 'src/city.cc', 438, 420 ]
+227 silly gunzTarPerm extractEntry src/city6.cc
+228 silly gunzTarPerm modified mode [ 'src/city6.cc', 438, 420 ]
+229 silly gunzTarPerm extractEntry src/city6.h
+230 silly gunzTarPerm modified mode [ 'src/city6.h', 438, 420 ]
+231 silly gunzTarPerm extractEntry src/country.cc
+232 silly gunzTarPerm modified mode [ 'src/country.cc', 438, 420 ]
+233 silly gunzTarPerm extractEntry src/country.h
+234 silly gunzTarPerm modified mode [ 'src/country.h', 438, 420 ]
+235 silly gunzTarPerm extractEntry src/country6.cc
+236 silly gunzTarPerm modified mode [ 'src/country6.cc', 438, 420 ]
+237 silly gunzTarPerm extractEntry src/country6.h
+238 silly gunzTarPerm modified mode [ 'src/country6.h', 438, 420 ]
+239 silly gunzTarPerm extractEntry src/global.cc
+240 silly gunzTarPerm modified mode [ 'src/global.cc', 438, 420 ]
+241 silly gunzTarPerm extractEntry src/global.h
+242 silly gunzTarPerm modified mode [ 'src/global.h', 438, 420 ]
+243 silly gunzTarPerm extractEntry src/init.cc
+244 silly gunzTarPerm modified mode [ 'src/init.cc', 438, 420 ]
+245 silly gunzTarPerm extractEntry src/city.h
+246 silly gunzTarPerm modified mode [ 'src/city.h', 438, 420 ]
+247 silly gunzTarPerm extractEntry src/netspeed.cc
+248 silly gunzTarPerm modified mode [ 'src/netspeed.cc', 438, 420 ]
+249 silly gunzTarPerm extractEntry src/netspeed.h
+250 silly gunzTarPerm modified mode [ 'src/netspeed.h', 438, 420 ]
+251 silly gunzTarPerm extractEntry src/netspeedcell.cc
+252 silly gunzTarPerm modified mode [ 'src/netspeedcell.cc', 438, 420 ]
+253 silly gunzTarPerm extractEntry src/netspeedcell.h
+254 silly gunzTarPerm modified mode [ 'src/netspeedcell.h', 438, 420 ]
+255 silly gunzTarPerm extractEntry src/org.cc
+256 silly gunzTarPerm modified mode [ 'src/org.cc', 438, 420 ]
+257 silly gunzTarPerm extractEntry src/org.h
+258 silly gunzTarPerm modified mode [ 'src/org.h', 438, 420 ]
+259 silly gunzTarPerm extractEntry src/region.cc
+260 silly gunzTarPerm modified mode [ 'src/region.cc', 438, 420 ]
+261 silly gunzTarPerm extractEntry src/region.h
+262 silly gunzTarPerm modified mode [ 'src/region.h', 438, 420 ]
+263 silly gunzTarPerm extractEntry src/utils.cc
+264 silly gunzTarPerm modified mode [ 'src/utils.cc', 438, 420 ]
+265 silly gunzTarPerm extractEntry src/utils.h
+266 silly gunzTarPerm modified mode [ 'src/utils.h', 438, 420 ]
+267 silly gunzTarPerm extractEntry test/city.mocha.js
+268 silly gunzTarPerm modified mode [ 'test/city.mocha.js', 438, 420 ]
+269 silly gunzTarPerm extractEntry test/country6.mocha.js
+270 silly gunzTarPerm modified mode [ 'test/country6.mocha.js', 438, 420 ]
+271 silly gunzTarPerm extractEntry test/memory_leak.js
+272 silly gunzTarPerm modified mode [ 'test/memory_leak.js', 438, 420 ]
+273 silly gunzTarPerm extractEntry test/special_ip.js
+274 silly gunzTarPerm modified mode [ 'test/special_ip.js', 438, 420 ]
+275 silly gunzTarPerm extractEntry test/country.mocha.js
+276 silly gunzTarPerm modified mode [ 'test/country.mocha.js', 438, 420 ]
+277 silly gunzTarPerm extractEntry test/city6.mocha.js
+278 silly gunzTarPerm modified mode [ 'test/city6.mocha.js', 438, 420 ]
+279 silly gunzTarPerm extractEntry test/org.mocha.js
+280 silly gunzTarPerm modified mode [ 'test/org.mocha.js', 438, 420 ]
+281 silly gunzTarPerm extractEntry test/region.mocha.js
+282 silly gunzTarPerm modified mode [ 'test/region.mocha.js', 438, 420 ]
+283 silly gunzTarPerm extractEntry test/sagfault.js
+284 silly gunzTarPerm modified mode [ 'test/sagfault.js', 438, 420 ]
+285 silly gunzTarPerm extractEntry test/segfault.js
+286 silly gunzTarPerm modified mode [ 'test/segfault.js', 438, 420 ]
+287 silly gunzTarPerm extractEntry test/netspeed.mocha.js
+288 silly gunzTarPerm modified mode [ 'test/netspeed.mocha.js', 438, 420 ]
+289 silly gunzTarPerm extractEntry test/utils.mocha.js
+290 silly gunzTarPerm modified mode [ 'test/utils.mocha.js', 438, 420 ]
+291 silly gunzTarPerm extractEntry test/netspeedcell.mocha.js
+292 silly gunzTarPerm modified mode [ 'test/netspeedcell.mocha.js', 438, 420 ]
+293 silly gunzTarPerm extractEntry test/mocha.opts
+294 silly gunzTarPerm modified mode [ 'test/mocha.opts', 438, 420 ]
+295 silly gunzTarPerm extractEntry USAGE.md
+296 silly gunzTarPerm modified mode [ 'USAGE.md', 438, 420 ]
+297 silly gunzTarPerm extractEntry wscript
+298 silly gunzTarPerm modified mode [ 'wscript', 438, 420 ]
+299 silly lockFile e1773423-agramLocation-node-modules-geoip tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+300 silly lockFile e1773423-agramLocation-node-modules-geoip tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+301 silly lockFile 0e389a4e-pm-cache-geoip-0-5-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\geoip\0.5.1\package.tgz
+302 silly lockFile 0e389a4e-pm-cache-geoip-0-5-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\geoip\0.5.1\package.tgz
+303 info preinstall geoip@0.5.1
+304 verbose readDependencies using package.json deps
+305 verbose readDependencies using package.json deps
+306 verbose cache add [ 'nan@~0.7.0', null ]
+307 verbose cache add name=undefined spec="nan@~0.7.0" args=["nan@~0.7.0",null]
+308 verbose parsed url { protocol: null,
+308 verbose parsed url   slashes: null,
+308 verbose parsed url   auth: null,
+308 verbose parsed url   host: null,
+308 verbose parsed url   port: null,
+308 verbose parsed url   hostname: null,
+308 verbose parsed url   hash: null,
+308 verbose parsed url   search: null,
+308 verbose parsed url   query: null,
+308 verbose parsed url   pathname: 'nan@~0.7.0',
+308 verbose parsed url   path: 'nan@~0.7.0',
+308 verbose parsed url   href: 'nan@~0.7.0' }
+309 verbose cache add name="nan" spec="~0.7.0" args=["nan","~0.7.0"]
+310 verbose parsed url { protocol: null,
+310 verbose parsed url   slashes: null,
+310 verbose parsed url   auth: null,
+310 verbose parsed url   host: null,
+310 verbose parsed url   port: null,
+310 verbose parsed url   hostname: null,
+310 verbose parsed url   hash: null,
+310 verbose parsed url   search: null,
+310 verbose parsed url   query: null,
+310 verbose parsed url   pathname: '~0.7.0',
+310 verbose parsed url   path: '~0.7.0',
+310 verbose parsed url   href: '~0.7.0' }
+311 verbose addNamed [ 'nan', '~0.7.0' ]
+312 verbose addNamed [ null, '>=0.7.0-0 <0.8.0-0' ]
+313 silly lockFile 9df25a33-nan-0-7-0 nan@~0.7.0
+314 verbose lock nan@~0.7.0 C:\Users\Jonathan\AppData\Roaming\npm-cache\9df25a33-nan-0-7-0.lock
+315 verbose cache add [ 'bindings@~1.1.1', null ]
+316 verbose cache add name=undefined spec="bindings@~1.1.1" args=["bindings@~1.1.1",null]
+317 verbose parsed url { protocol: null,
+317 verbose parsed url   slashes: null,
+317 verbose parsed url   auth: null,
+317 verbose parsed url   host: null,
+317 verbose parsed url   port: null,
+317 verbose parsed url   hostname: null,
+317 verbose parsed url   hash: null,
+317 verbose parsed url   search: null,
+317 verbose parsed url   query: null,
+317 verbose parsed url   pathname: 'bindings@~1.1.1',
+317 verbose parsed url   path: 'bindings@~1.1.1',
+317 verbose parsed url   href: 'bindings@~1.1.1' }
+318 verbose cache add name="bindings" spec="~1.1.1" args=["bindings","~1.1.1"]
+319 verbose parsed url { protocol: null,
+319 verbose parsed url   slashes: null,
+319 verbose parsed url   auth: null,
+319 verbose parsed url   host: null,
+319 verbose parsed url   port: null,
+319 verbose parsed url   hostname: null,
+319 verbose parsed url   hash: null,
+319 verbose parsed url   search: null,
+319 verbose parsed url   query: null,
+319 verbose parsed url   pathname: '~1.1.1',
+319 verbose parsed url   path: '~1.1.1',
+319 verbose parsed url   href: '~1.1.1' }
+320 verbose addNamed [ 'bindings', '~1.1.1' ]
+321 verbose addNamed [ null, '>=1.1.1-0 <1.2.0-0' ]
+322 silly lockFile cc1512d6-bindings-1-1-1 bindings@~1.1.1
+323 verbose lock bindings@~1.1.1 C:\Users\Jonathan\AppData\Roaming\npm-cache\cc1512d6-bindings-1-1-1.lock
+324 verbose cache add [ 'debug@~0.7.4', null ]
+325 verbose cache add name=undefined spec="debug@~0.7.4" args=["debug@~0.7.4",null]
+326 verbose parsed url { protocol: null,
+326 verbose parsed url   slashes: null,
+326 verbose parsed url   auth: null,
+326 verbose parsed url   host: null,
+326 verbose parsed url   port: null,
+326 verbose parsed url   hostname: null,
+326 verbose parsed url   hash: null,
+326 verbose parsed url   search: null,
+326 verbose parsed url   query: null,
+326 verbose parsed url   pathname: 'debug@~0.7.4',
+326 verbose parsed url   path: 'debug@~0.7.4',
+326 verbose parsed url   href: 'debug@~0.7.4' }
+327 verbose cache add name="debug" spec="~0.7.4" args=["debug","~0.7.4"]
+328 verbose parsed url { protocol: null,
+328 verbose parsed url   slashes: null,
+328 verbose parsed url   auth: null,
+328 verbose parsed url   host: null,
+328 verbose parsed url   port: null,
+328 verbose parsed url   hostname: null,
+328 verbose parsed url   hash: null,
+328 verbose parsed url   search: null,
+328 verbose parsed url   query: null,
+328 verbose parsed url   pathname: '~0.7.4',
+328 verbose parsed url   path: '~0.7.4',
+328 verbose parsed url   href: '~0.7.4' }
+329 verbose addNamed [ 'debug', '~0.7.4' ]
+330 verbose addNamed [ null, '>=0.7.4-0 <0.8.0-0' ]
+331 silly lockFile cf1a6986-debug-0-7-4 debug@~0.7.4
+332 verbose lock debug@~0.7.4 C:\Users\Jonathan\AppData\Roaming\npm-cache\cf1a6986-debug-0-7-4.lock
+333 silly addNameRange { name: 'bindings', range: '>=1.1.1-0 <1.2.0-0', hasData: false }
+334 silly addNameRange { name: 'nan', range: '>=0.7.0-0 <0.8.0-0', hasData: false }
+335 silly addNameRange { name: 'debug', range: '>=0.7.4-0 <0.8.0-0', hasData: false }
+336 verbose url raw bindings
+337 verbose url resolving [ 'https://registry.npmjs.org/', './bindings' ]
+338 verbose url resolved https://registry.npmjs.org/bindings
+339 info trying registry request attempt 1 at 13:57:02
+340 verbose etag "9AQH9R42Z0IZCYYTI9QN1MYJD"
+341 http GET https://registry.npmjs.org/bindings
+342 verbose url raw nan
+343 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+344 verbose url resolved https://registry.npmjs.org/nan
+345 info trying registry request attempt 1 at 13:57:02
+346 verbose etag "A46SCS9WKS4GC6IUQTEPOXH8L"
+347 http GET https://registry.npmjs.org/nan
+348 verbose url raw debug
+349 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+350 verbose url resolved https://registry.npmjs.org/debug
+351 info trying registry request attempt 1 at 13:57:02
+352 verbose etag "90UNYUHTLMZAGJ4X2KOTKE2H5"
+353 http GET https://registry.npmjs.org/debug
+354 http 304 https://registry.npmjs.org/bindings
+355 silly registry.get cb [ 304,
+355 silly registry.get   { date: 'Sun, 26 Jan 2014 12:57:11 GMT',
+355 silly registry.get     server: 'Apache',
+355 silly registry.get     connection: 'Keep-Alive',
+355 silly registry.get     'keep-alive': 'timeout=10, max=50',
+355 silly registry.get     etag: '"9AQH9R42Z0IZCYYTI9QN1MYJD"',
+355 silly registry.get     vary: 'Accept' } ]
+356 verbose etag bindings from cache
+357 http 304 https://registry.npmjs.org/nan
+358 silly registry.get cb [ 304,
+358 silly registry.get   { date: 'Sun, 26 Jan 2014 12:57:11 GMT',
+358 silly registry.get     server: 'Apache',
+358 silly registry.get     connection: 'Keep-Alive',
+358 silly registry.get     'keep-alive': 'timeout=10, max=50',
+358 silly registry.get     etag: '"A46SCS9WKS4GC6IUQTEPOXH8L"',
+358 silly registry.get     vary: 'Accept' } ]
+359 verbose etag nan from cache
+360 http 304 https://registry.npmjs.org/debug
+361 silly registry.get cb [ 304,
+361 silly registry.get   { date: 'Sun, 26 Jan 2014 12:57:11 GMT',
+361 silly registry.get     server: 'Apache',
+361 silly registry.get     connection: 'Keep-Alive',
+361 silly registry.get     'keep-alive': 'timeout=10, max=50',
+361 silly registry.get     etag: '"90UNYUHTLMZAGJ4X2KOTKE2H5"',
+361 silly registry.get     vary: 'Accept' } ]
+362 verbose etag debug from cache
+363 silly addNameRange number 2 { name: 'bindings', range: '>=1.1.1-0 <1.2.0-0', hasData: true }
+364 silly addNameRange versions [ 'bindings',
+364 silly addNameRange   [ '0.0.1',
+364 silly addNameRange     '0.1.0',
+364 silly addNameRange     '0.1.1',
+364 silly addNameRange     '0.2.0',
+364 silly addNameRange     '0.2.1',
+364 silly addNameRange     '0.2.2',
+364 silly addNameRange     '0.2.3',
+364 silly addNameRange     '0.2.4',
+364 silly addNameRange     '0.3.0',
+364 silly addNameRange     '0.4.0',
+364 silly addNameRange     '1.0.0',
+364 silly addNameRange     '1.1.0',
+364 silly addNameRange     '1.1.1' ] ]
+365 verbose addNamed [ 'bindings', '1.1.1' ]
+366 verbose addNamed [ '1.1.1', '1.1.1' ]
+367 silly lockFile 52dd60a7-bindings-1-1-1 bindings@1.1.1
+368 verbose lock bindings@1.1.1 C:\Users\Jonathan\AppData\Roaming\npm-cache\52dd60a7-bindings-1-1-1.lock
+369 silly addNameRange number 2 { name: 'debug', range: '>=0.7.4-0 <0.8.0-0', hasData: true }
+370 silly addNameRange versions [ 'debug',
+370 silly addNameRange   [ '0.0.1',
+370 silly addNameRange     '0.1.0',
+370 silly addNameRange     '0.2.0',
+370 silly addNameRange     '0.3.0',
+370 silly addNameRange     '0.4.0',
+370 silly addNameRange     '0.4.1',
+370 silly addNameRange     '0.5.0',
+370 silly addNameRange     '0.6.0',
+370 silly addNameRange     '0.7.0',
+370 silly addNameRange     '0.7.1',
+370 silly addNameRange     '0.7.2',
+370 silly addNameRange     '0.7.3',
+370 silly addNameRange     '0.7.4' ] ]
+371 verbose addNamed [ 'debug', '0.7.4' ]
+372 verbose addNamed [ '0.7.4', '0.7.4' ]
+373 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+374 verbose lock debug@0.7.4 C:\Users\Jonathan\AppData\Roaming\npm-cache\16160008-debug-0-7-4.lock
+375 silly addNameRange number 2 { name: 'nan', range: '>=0.7.0-0 <0.8.0-0', hasData: true }
+376 silly addNameRange versions [ 'nan',
+376 silly addNameRange   [ '0.3.0-wip',
+376 silly addNameRange     '0.3.0-wip2',
+376 silly addNameRange     '0.3.0',
+376 silly addNameRange     '0.3.1',
+376 silly addNameRange     '0.3.2',
+376 silly addNameRange     '0.4.0',
+376 silly addNameRange     '0.4.1',
+376 silly addNameRange     '0.4.2',
+376 silly addNameRange     '0.4.3',
+376 silly addNameRange     '0.4.4',
+376 silly addNameRange     '0.5.0',
+376 silly addNameRange     '0.5.1',
+376 silly addNameRange     '0.5.2',
+376 silly addNameRange     '0.6.0',
+376 silly addNameRange     '0.7.0',
+376 silly addNameRange     '0.7.1',
+376 silly addNameRange     '0.8.0' ] ]
+377 verbose addNamed [ 'nan', '0.7.1' ]
+378 verbose addNamed [ '0.7.1', '0.7.1' ]
+379 silly lockFile f54c0d1e-nan-0-7-1 nan@0.7.1
+380 verbose lock nan@0.7.1 C:\Users\Jonathan\AppData\Roaming\npm-cache\f54c0d1e-nan-0-7-1.lock
+381 silly lockFile 52dd60a7-bindings-1-1-1 bindings@1.1.1
+382 silly lockFile 52dd60a7-bindings-1-1-1 bindings@1.1.1
+383 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+384 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+385 silly lockFile cc1512d6-bindings-1-1-1 bindings@~1.1.1
+386 silly lockFile cc1512d6-bindings-1-1-1 bindings@~1.1.1
+387 silly lockFile f54c0d1e-nan-0-7-1 nan@0.7.1
+388 silly lockFile f54c0d1e-nan-0-7-1 nan@0.7.1
+389 silly lockFile cf1a6986-debug-0-7-4 debug@~0.7.4
+390 silly lockFile cf1a6986-debug-0-7-4 debug@~0.7.4
+391 silly lockFile 9df25a33-nan-0-7-0 nan@~0.7.0
+392 silly lockFile 9df25a33-nan-0-7-0 nan@~0.7.0
+393 silly resolved [ { name: 'bindings',
+393 silly resolved     description: 'Helper module for loading your native module\'s .node file',
+393 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+393 silly resolved     version: '1.1.1',
+393 silly resolved     author:
+393 silly resolved      { name: 'Nathan Rajlich',
+393 silly resolved        email: 'nathan@tootallnate.net',
+393 silly resolved        url: 'http://tootallnate.net' },
+393 silly resolved     repository:
+393 silly resolved      { type: 'git',
+393 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+393 silly resolved     main: './bindings.js',
+393 silly resolved     readme: 'node-bindings\n=============\n### Helper module for loading your native module\'s .node file\n\nThis is a helper module for authors of Node.js native addon modules.\nIt is basically the "swiss army knife" of `require()`ing your native module\'s\n`.node` file.\n\nThroughout the course of Node\'s native addon history, addons have ended up being\ncompiled in a variety of different places, depending on which build tool and which\nversion of node was used. To make matters worse, now the _gyp_ build tool can\nproduce either a _Release_ or _Debug_ build, each being built into different\nlocations.\n\nThis module checks _all_ the possible locations that a native addon would be built\nat, and returns the first one that loads successfully.\n\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\n$ npm install bindings\n```\n\nOr add it to the `"dependencies"` section of your _package.json_ file.\n\n\nExample\n-------\n\n`require()`ing the proper bindings file for the current node version, platform\nand architecture is as simple as:\n\n``` js\nvar bindings = require(\'bindings\')(\'binding.node\')\n\n// Use your bindings defined in your C files\nbindings.your_c_function()\n```\n\n\nNice Error Output\n-----------------\n\nWhen the `.node` file could not be loaded, `node-bindings` throws an Error with\na nice error message telling you exactly what was tried. You can also check the\n`err.tries` Array property.\n\n```\nError: Could not load the bindings file. Tried:\n → /Users/nrajlich/ref/build/binding.node\n → /Users/nrajlich/ref/build/Debug/binding.node\n → /Users/nrajlich/ref/build/Release/binding.node\n → /Users/nrajlich/ref/out/Debug/binding.node\n → /Users/nrajlich/ref/Debug/binding.node\n → /Users/nrajlich/ref/out/Release/binding.node\n → /Users/nrajlich/ref/Release/binding.node\n → /Users/nrajlich/ref/build/default/binding.node\n → /Users/nrajlich/ref/compiled/0.8.2/darwin/x64/binding.node\n    at bindings (/Users/nrajlich/ref/node_modules/bindings/bindings.js:84:13)\n    at Object.<anonymous> (/Users/nrajlich/ref/lib/ref.js:5:47)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    ...\n```\n\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+393 silly resolved     readmeFilename: 'README.md',
+393 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+393 silly resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+393 silly resolved     _id: 'bindings@1.1.1',
+393 silly resolved     _from: 'bindings@~1.1.1' },
+393 silly resolved   { name: 'debug',
+393 silly resolved     version: '0.7.4',
+393 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+393 silly resolved     description: 'small debugging utility',
+393 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+393 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+393 silly resolved     dependencies: {},
+393 silly resolved     devDependencies: { mocha: '*' },
+393 silly resolved     main: 'lib/debug.js',
+393 silly resolved     browser: './debug.js',
+393 silly resolved     engines: { node: '*' },
+393 silly resolved     files: [ 'lib/debug.js', 'debug.js', 'index.js' ],
+393 silly resolved     component: { scripts: [Object] },
+393 silly resolved     readme: '# debug\n\n  tiny node.js debugging utility modelled after node core\'s debugging technique.\n\n## Installation\n\n```\n$ npm install debug\n```\n\n## Usage\n\n With `debug` you simply invoke the exported function to generate your debug function, passing it a name which will determine if a noop function is returned, or a decorated `console.error`, so all of the `console` format string goodies you\'re used to work fine. A unique color is selected per-function for visibility.\n \nExample _app.js_:\n\n```js\nvar debug = require(\'debug\')(\'http\')\n  , http = require(\'http\')\n  , name = \'My App\';\n\n// fake app\n\ndebug(\'booting %s\', name);\n\nhttp.createServer(function(req, res){\n  debug(req.method + \' \' + req.url);\n  res.end(\'hello\\n\');\n}).listen(3000, function(){\n  debug(\'listening\');\n});\n\n// fake worker of some kind\n\nrequire(\'./worker\');\n```\n\nExample _worker.js_:\n\n```js\nvar debug = require(\'debug\')(\'worker\');\n\nsetInterval(function(){\n  debug(\'doing some work\');\n}, 1000);\n```\n\n The __DEBUG__ environment variable is then used to enable these based on space or comma-delimited names. Here are some examples:\n\n  ![debug http and worker](http://f.cl.ly/items/18471z1H402O24072r1J/Screenshot.png)\n\n  ![debug worker](http://f.cl.ly/items/1X413v1a3M0d3C2c1E0i/Screenshot.png)\n\n## Millisecond diff\n\n  When actively developing an application it can be useful to see when the time spent between one `debug()` call and the next. Suppose for example you invoke `debug()` before requesting a resource, and after as well, the "+NNNms" will show you how much time was spent between calls.\n\n  ![](http://f.cl.ly/items/2i3h1d3t121M2Z1A3Q0N/Screenshot.png)\n\n  When stderr is not a TTY, `Date#toUTCString()` is used, making it more useful for logging the debug information as shown below:\n  _(NOTE: Debug now uses stderr instead of stdout, so the correct shell command for this example is actually `DEBUG=* node example/worker 2> out &`)_\n  \n  ![](http://f.cl.ly/items/112H3i0e0o0P0a2Q2r11/Screenshot.png)\n  \n## Conventions\n\n If you\'re using this in one or more of your libraries, you _should_ use the name of your library so that developers may toggle debugging as desired without guessing names. If you have more than one debuggers you _should_ prefix them with your library name and use ":" to separate features. For example "bodyParser" from Connect would then be "connect:bodyParser". \n\n## Wildcards\n\n  The "*" character may be used as a wildcard. Suppose for example your library has debuggers named "connect:bodyParser", "connect:compress", "connect:session", instead of listing all three with `DEBUG=connect:bodyParser,connect.compress,connect:session`, you may simply do `DEBUG=connect:*`, or to run everything using this module simply use `DEBUG=*`.\n\n  You can also exclude specific debuggers by prefixing them with a "-" character.  For example, `DEBUG=* -connect:*` would include all debuggers except those starting with "connect:".\n\n## Browser support\n\n Debug works in the browser as well, currently persisted by `localStorage`. For example if you have `worker:a` and `worker:b` as shown below, and wish to debug both type `debug.enable(\'worker:*\')` in the console and refresh the page, this will remain until you disable with `debug.disable()`. \n\n```js\na = debug(\'worker:a\');\nb = debug(\'worker:b\');\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1000);\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1200);\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+393 silly resolved     readmeFilename: 'Readme.md',
+393 silly resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+393 silly resolved     homepage: 'https://github.com/visionmedia/debug',
+393 silly resolved     _id: 'debug@0.7.4',
+393 silly resolved     _from: 'debug@~0.7.4' },
+393 silly resolved   { name: 'nan',
+393 silly resolved     version: '0.7.1',
+393 silly resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+393 silly resolved     main: 'include_dirs.js',
+393 silly resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+393 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+393 silly resolved     license: 'MIT',
+393 silly resolved     readme: 'Native Abstractions for Node.js\n===============================\n\n**A header file filled with macro and utility goodness for making add-on development for Node.js easier across versions 0.8, 0.10 and 0.11, and eventually 0.12.**\n\n***Current version: 0.7.1*** *(See [nan.h](https://github.com/rvagg/nan/blob/master/nan.h) for complete ChangeLog)*\n\n[![NPM](https://nodei.co/npm/nan.png?downloads=true)](https://nodei.co/npm/nan/) [![NPM](https://nodei.co/npm-dl/nan.png?months=6)](https://nodei.co/npm/nan/)\n\nThanks to the crazy changes in V8 (and some in Node core), keeping native addons compiling happily across versions, particularly 0.10 to 0.11/0.12, is a minor nightmare. The goal of this project is to store all logic necessary to develop native Node.js addons without having to inspect `NODE_MODULE_VERSION` and get yourself into a macro-tangle.\n\nThis project also contains some helper utilities that make addon development a bit more pleasant.\n\n * **[News & Updates](#news)**\n * **[Usage](#usage)**\n * **[Example](#example)**\n * **[API](#api)**\n\n<a name="news"></a>\n## News & Updates\n\n### Dec-2013: NanCString and NanRawString\n\nTwo new functions have been introduced to replace the functionality that\'s been provided by `NanFromV8String` until now. NanCString has sensible defaults so it\'s super easy to fetch a null-terminated c-style string out of a `v8::String`. `NanFromV8String` is still around and has defaults that allow you to pass a single handle to fetch a `char*` while `NanRawString` requires a little more attention to arguments.\n\n### Nov-2013: Node 0.11.9+ breaking V8 change\n\nThe version of V8 that\'s shipping with Node 0.11.9+ has changed the signature for new `Local`s to: `v8::Local<T>::New(isolate, value)`, i.e. introducing the `isolate` argument and therefore breaking all new `Local` declarations for previous versions. NAN 0.6+ now includes a `NanNewLocal<T>(value)` that can be used in place to work around this incompatibility and maintain compatibility with 0.8->0.11.9+ (minus a few early 0.11 releases).\n\nFor example, if you wanted to return a `null` on a callback you will have to change the argument from `v8::Local<v8::Value>::New(v8::Null())` to `NanNewLocal<v8::Value>(v8::Null())`.\n\n### Nov-2013: Change to binding.gyp `"include_dirs"` for NAN\n\nInclusion of NAN in a project\'s binding.gyp is now greatly simplified. You can now just use `"<!(node -e \\"require(\'nan\')\\")"` in your `"include_dirs"`, see example below (note Windows needs the quoting around `require` to be just right: `"require(\'nan\')"` with appropriate `\\` escaping).\n\n<a name="usage"></a>\n## Usage\n\nSimply add **NAN** as a dependency in the *package.json* of your Node addon:\n\n``` bash\n$ npm install --save nan\n```\n\nPull in the path to **NAN** in your *binding.gyp* so that you can use `#include "nan.h"` in your *.cpp* files:\n\n``` python\n"include_dirs" : [\n    "<!(node -e \\"require(\'nan\')\\")"\n]\n```\n\nThis works like a `-I<path-to-NAN>` when compiling your addon.\n\n<a name="example"></a>\n## Example\n\nSee **[LevelDOWN](https://github.com/rvagg/node-leveldown/pull/48)** for a full example of **NAN** in use.\n\nFor a simpler example, see the **[async pi estimation example](https://github.com/rvagg/nan/tree/master/examples/async_pi_estimate)** in the examples directory for full code and an explanation of what this Monte Carlo Pi estimation example does. Below are just some parts of the full example that illustrate the use of **NAN**.\n\nCompare to the current 0.10 version of this example, found in the [node-addon-examples](https://github.com/rvagg/node-addon-examples/tree/master/9_async_work) repository and also a 0.11 version of the same found [here](https://github.com/kkoopa/node-addon-examples/tree/5c01f58fc993377a567812597e54a83af69686d7/9_async_work).\n\nNote that there is no embedded version sniffing going on here and also the async work is made much simpler, see below for details on the `NanAsyncWorker` class.\n\n```c++\n// addon.cc\n#include <node.h>\n#include "nan.h"\n// ...\n\nusing namespace v8;\n\nvoid InitAll(Handle<Object> exports) {\n  exports->Set(NanSymbol("calculateSync"),\n    FunctionTemplate::New(CalculateSync)->GetFunction());\n\n  exports->Set(NanSymbol("calculateAsync"),\n    FunctionTemplate::New(CalculateAsync)->GetFunction());\n}\n\nNODE_MODULE(addon, InitAll)\n```\n\n```c++\n// sync.h\n#include <node.h>\n#include "nan.h"\n\nNAN_METHOD(CalculateSync);\n```\n\n```c++\n// sync.cc\n#include <node.h>\n#include "nan.h"\n#include "sync.h"\n// ...\n\nusing namespace v8;\n\n// Simple synchronous access to the `Estimate()` function\nNAN_METHOD(CalculateSync) {\n  NanScope();\n\n  // expect a number as the first argument\n  int points = args[0]->Uint32Value();\n  double est = Estimate(points);\n\n  NanReturnValue(Number::New(est));\n}\n```\n\n```c++\n// async.cc\n#include <node.h>\n#include "nan.h"\n#include "async.h"\n\n// ...\n\nusing namespace v8;\n\nclass PiWorker : public NanAsyncWorker {\n public:\n  PiWorker(NanCallback *callback, int points)\n    : NanAsyncWorker(callback), points(points) {}\n  ~PiWorker() {}\n\n  // Executed inside the worker-thread.\n  // It is not safe to access V8, or V8 data structures\n  // here, so everything we need for input and output\n  // should go on `this`.\n  void Execute () {\n    estimate = Estimate(points);\n  }\n\n  // Executed when the async work is complete\n  // this function will be run inside the main event loop\n  // so it is safe to use V8 again\n  void HandleOKCallback () {\n    NanScope();\n\n    Local<Value> argv[] = {\n        Local<Value>::New(Null())\n      , Number::New(estimate)\n    };\n\n    callback->Call(2, argv);\n  };\n\n private:\n  int points;\n  double estimate;\n};\n\n// Asynchronous access to the `Estimate()` function\nNAN_METHOD(CalculateAsync) {\n  NanScope();\n\n  int points = args[0]->Uint32Value();\n  NanCallback *callback = new NanCallback(args[1].As<Function>());\n\n  NanAsyncQueueWorker(new PiWorker(callback, points));\n  NanReturnUndefined();\n}\n```\n\n<a name="api"></a>\n## API\n\n * <a href="#api_nan_method"><b><code>NAN_METHOD</code></b></a>\n * <a href="#api_nan_getter"><b><code>NAN_GETTER</code></b></a>\n * <a href="#api_nan_setter"><b><code>NAN_SETTER</code></b></a>\n * <a href="#api_nan_property_getter"><b><code>NAN_PROPERTY_GETTER</code></b></a>\n * <a href="#api_nan_property_setter"><b><code>NAN_PROPERTY_SETTER</code></b></a>\n * <a href="#api_nan_property_enumerator"><b><code>NAN_PROPERTY_ENUMERATOR</code></b></a>\n * <a href="#api_nan_property_deleter"><b><code>NAN_PROPERTY_DELETER</code></b></a>\n * <a href="#api_nan_property_query"><b><code>NAN_PROPERTY_QUERY</code></b></a>\n * <a href="#api_nan_index_getter"><b><code>NAN_INDEX_GETTER</code></b></a>\n * <a href="#api_nan_index_setter"><b><code>NAN_INDEX_SETTER</code></b></a>\n * <a href="#api_nan_index_enumerator"><b><code>NAN_INDEX_ENUMERATOR</code></b></a>\n * <a href="#api_nan_index_deleter"><b><code>NAN_INDEX_DELETER</code></b></a>\n * <a href="#api_nan_index_query"><b><code>NAN_INDEX_QUERY</code></b></a>\n * <a href="#api_nan_weak_callback"><b><code>NAN_WEAK_CALLBACK</code></b></a>\n * <a href="#api_nan_deprecated"><b><code>NAN_DEPRECATED</code></b></a>\n * <a href="#api_nan_inline"><b><code>NAN_INLINE</code></b></a> \n * <a href="#api_nan_new_local"><b><code>NanNewLocal</code></b></a>\n * <a href="#api_nan_return_value"><b><code>NanReturnValue</code></b></a>\n * <a href="#api_nan_return_undefined"><b><code>NanReturnUndefined</code></b></a>\n * <a href="#api_nan_return_null"><b><code>NanReturnNull</code></b></a>\n * <a href="#api_nan_return_empty_string"><b><code>NanReturnEmptyString</code></b></a>\n * <a href="#api_nan_scope"><b><code>NanScope</code></b></a>\n * <a href="#api_nan_locker"><b><code>NanLocker</code></b></a>\n * <a href="#api_nan_unlocker"><b><code>NanUnlocker</code></b></a>\n * <a href="#api_nan_get_internal_field_pointer"><b><code>NanGetInternalFieldPointer</code></b></a>\n * <a href="#api_nan_set_internal_field_pointer"><b><code>NanSetInternalFieldPointer</code></b></a>\n * <a href="#api_nan_object_wrap_handle"><b><code>NanObjectWrapHandle</code></b></a>\n * <a href="#api_nan_make_weak"><b><code>NanMakeWeak</code></b></a>\n * <a href="#api_nan_symbol"><b><code>NanSymbol</code></b></a>\n * <a href="#api_nan_get_pointer_safe"><b><code>NanGetPointerSafe</code></b></a>\n * <a href="#api_nan_set_pointer_safe"><b><code>NanSetPointerSafe</code></b></a>\n * <a href="#api_nan_raw_string"><b><code>NanRawString</code></b></a>\n * <a href="#api_nan_c_string"><b><code>NanCString</code></b></a>\n * <a href="#api_nan_from_v8_string"><b><code>NanFromV8String</code></b></a>\n * <a href="#api_nan_boolean_option_value"><b><code>NanBooleanOptionValue</code></b></a>\n * <a href="#api_nan_uint32_option_value"><b><code>NanUInt32OptionValue</code></b></a>\n * <a href="#api_nan_error"><b><code>NanError</code></b>, <b><code>NanTypeError</code></b>, <b><code>NanRangeError</code></b></a>\n * <a href="#api_nan_throw_error"><b><code>NanThrowError</code></b>, <b><code>NanThrowTypeError</code></b>, <b><code>NanThrowRangeError</code></b>, <b><code>NanThrowError(Handle<Value>)</code></b>, <b><code>NanThrowError(Handle<Value>, int)</code></b></a>\n * <a href="#api_nan_new_buffer_handle"><b><code>NanNewBufferHandle(char *, size_t, FreeCallback, void *)</code></b>, <b><code>NanNewBufferHandle(char *, uint32_t)</code></b>, <b><code>NanNewBufferHandle(uint32_t)</code></b></a>\n * <a href="#api_nan_buffer_use"><b><code>NanBufferUse(char *, uint32_t)</code></b></a>\n * <a href="#api_nan_new_context_handle"><b><code>NanNewContextHandle</code></b></a>\n * <a href="#api_nan_has_instance"><b><code>NanHasInstance</code></b></a>\n * <a href="#api_nan_persistent_to_local"><b><code>NanPersistentToLocal</code></b></a>\n * <a href="#api_nan_dispose"><b><code>NanDispose</code></b></a>\n * <a href="#api_nan_assign_persistent"><b><code>NanAssignPersistent</code></b></a>\n * <a href="#api_nan_init_persistent"><b><code>NanInitPersistent</code></b></a>\n * <a href="#api_nan_callback"><b><code>NanCallback</code></b></a>\n * <a href="#api_nan_async_worker"><b><code>NanAsyncWorker</code></b></a>\n * <a href="#api_nan_async_queue_worker"><b><code>NanAsyncQueueWorker</code></b></a>\n\n<a name="api_nan_method"></a>\n### NAN_METHOD(methodname)\n\nUse `NAN_METHOD` to define your V8 accessible methods:\n\n```c++\n// .h:\nclass Foo : public node::ObjectWrap {\n  ...\n\n  static NAN_METHOD(Bar);\n  static NAN_METHOD(Baz);\n}\n\n\n// .cc:\nNAN_METHOD(Foo::Bar) {\n  ...\n}\n\nNAN_METHOD(Foo::Baz) {\n  ...\n}\n```\n\nThe reason for this macro is because of the method signature change in 0.11:\n\n```c++\n// 0.10 and below:\nHandle<Value> name(const Arguments& args)\n\n// 0.11 and above\nvoid name(const FunctionCallbackInfo<Value>& args)\n```\n\nThe introduction of `FunctionCallbackInfo` brings additional complications:\n\n<a name="api_nan_getter"></a>\n### NAN_GETTER(methodname)\n\nUse `NAN_GETTER` to declare your V8 accessible getters. You get a `Local<String>` `property` and an appropriately typed `args` object that can act like the `args` argument to a `NAN_METHOD` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_GETTER`.\n\n<a name="api_nan_setter"></a>\n### NAN_SETTER(methodname)\n\nUse `NAN_SETTER` to declare your V8 accessible setters. Same as `NAN_GETTER` but you also get a `Local<Value>` `value` object to work with.\n\n<a name="api_nan_property_getter"></a>\n### NAN_PROPERTY_GETTER(cbname)\nUse `NAN_PROPERTY_GETTER` to declare your V8 accessible property getters. You get a `Local<String>` `property` and an appropriately typed `args` object that can act similar to the `args` argument to a `NAN_METHOD` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_GETTER`.\n\n<a name="api_nan_property_setter"></a>\n### NAN_PROPERTY_SETTER(cbname)\nUse `NAN_PROPERTY_SETTER` to declare your V8 accessible property setters. Same as `NAN_PROPERTY_GETTER` but you also get a `Local<Value>` `value` object to work with.\n\n<a name="api_nan_property_enumerator"></a>\n### NAN_PROPERTY_ENUMERATOR(cbname)\nUse `NAN_PROPERTY_ENUMERATOR` to declare your V8 accessible property enumerators. You get an appropriately typed `args` object like the `args` argument to a `NAN_PROPERTY_GETTER` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_ENUMERATOR`.\n\n<a name="api_nan_property_deleter"></a>\n### NAN_PROPERTY_DELETER(cbname)\nUse `NAN_PROPERTY_DELETER` to declare your V8 accessible property deleters. Same as `NAN_PROPERTY_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_DELETER`.\n\n<a name="api_nan_property_query"></a>\n### NAN_PROPERTY_QUERY(cbname)\nUse `NAN_PROPERTY_QUERY` to declare your V8 accessible property queries. Same as `NAN_PROPERTY_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_PROPERTY_QUERY`.\n\n<a name="api_nan_index_getter"></a>\n### NAN_INDEX_GETTER(cbname)\nUse `NAN_INDEX_GETTER` to declare your V8 accessible index getters. You get a `uint32_t` `index` and an appropriately typed `args` object that can act similar to the `args` argument to a `NAN_METHOD` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_GETTER`.\n\n<a name="api_nan_index_setter"></a>\n### NAN_INDEX_SETTER(cbname)\nUse `NAN_INDEX_SETTER` to declare your V8 accessible index setters. Same as `NAN_INDEX_GETTER` but you also get a `Local<Value>` `value` object to work with.\n\n<a name="api_nan_index_enumerator"></a>\n### NAN_INDEX_ENUMERATOR(cbname)\nUse `NAN_INDEX_ENUMERATOR` to declare your V8 accessible index enumerators. You get an appropriately typed `args` object like the `args` argument to a `NAN_INDEX_GETTER` call.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_ENUMERATOR`.\n\n<a name="api_nan_index_deleter"></a>\n### NAN_INDEX_DELETER(cbname)\nUse `NAN_INDEX_DELETER` to declare your V8 accessible index deleters. Same as `NAN_INDEX_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_DELETER`.\n\n<a name="api_nan_index_query"></a>\n### NAN_INDEX_QUERY(cbname)\nUse `NAN_INDEX_QUERY` to declare your V8 accessible index queries. Same as `NAN_INDEX_GETTER`.\n\nYou can use `NanReturnNull()`, `NanReturnEmptyString()`, `NanReturnUndefined()` and `NanReturnValue()` in a `NAN_INDEX_QUERY`.\n\n<a name="api_nan_weak_callback"></a>\n### NAN_WEAK_CALLBACK(type, cbname)\n\nUse `NAN_WEAK_CALLBACK` to declare your V8 WeakReference callbacks. There is an object argument accessible through `NAN_WEAK_CALLBACK_OBJECT`. The `type` argument gives the type of the `data` argument, accessible through `NAN_WEAK_CALLBACK_DATA(type)`.\n\n```c++\nstatic NAN_WEAK_CALLBACK(BufferReference*, WeakCheck) {\n  if (NAN_WEAK_CALLBACK_DATA(BufferReference*)->noLongerNeeded_) {\n    delete NAN_WEAK_CALLBACK_DATA(BufferReference*);\n  } else {\n    // Still in use, revive, prevent GC\n    NanMakeWeak(NAN_WEAK_CALLBACK_OBJECT, NAN_WEAK_CALLBACK_DATA(BufferReference*), &WeakCheck);\n  }\n}\n```\n\n<a name="api_nan_deprecated"></a>\n### NAN_DEPRECATED(declarator)\nDeclares a function as deprecated. Identical to `V8_DEPRECATED`.\n\n```c++\nstatic NAN_DEPRECATED(NAN_METHOD(foo)) {\n  ...\n}\n```\n\n<a name="api_nan_inline"></a>\n### NAN_INLINE(declarator)\nInlines a function. Identical to `V8_INLINE`.\n\n```c++\nstatic NAN_INLINE(int foo(int bar)) {\n  ...\n}\n```\n\n<a name="api_nan_new_local"></a>\n### NanNewLocal&lt;T&gt;(Handle&lt;Value&gt;)\n\nUse `NanNewLocal` in place of `v8::Local<T>::New(...)` as this function\nrequires an `isolate` argument in recent versions of V8 but not in older versions.\n\n```c++\nNanNewLocal<v8::Value>(v8::Null())\n```\n\n<a name="api_nan_return_value"></a>\n### NanReturnValue(Handle&lt;Value&gt;)\n\nUse `NanReturnValue` when you want to return a value from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  ...\n\n  NanReturnValue(String::New("FooBar!"));\n}\n```\n\nNo `return` statement required.\n\n<a name="api_nan_return_undefined"></a>\n### NanReturnUndefined()\n\nUse `NanReturnUndefined` when you don\'t want to return anything from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Baz) {\n  ...\n\n  NanReturnUndefined();\n}\n```\n\n<a name="api_nan_return_null"></a>\n### NanReturnNull()\n\nUse `NanReturnNull` when you want to return `Null` from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Baz) {\n  ...\n\n  NanReturnNull();\n}\n```\n\n<a name="api_nan_return_empty_string"></a>\n### NanReturnEmptyString()\n\nUse `NanReturnEmptyString` when you want to return an empty `String` from your V8 accessible method:\n\n```c++\nNAN_METHOD(Foo::Baz) {\n  ...\n\n  NanReturnEmptyString();\n}\n```\n\n<a name="api_nan_scope"></a>\n### NanScope()\n\nThe introduction of `isolate` references for many V8 calls in Node 0.11 makes `NanScope()` necessary, use it in place of `HandleScope scope`:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  NanScope();\n\n  NanReturnValue(String::New("FooBar!"));\n}\n```\n\n<a name="api_nan_locker"></a>\n### NanLocker()\n\nThe introduction of `isolate` references for many V8 calls in Node 0.11 makes `NanLocker()` necessary, use it in place of `Locker locker`:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  NanLocker();\n  ...\n  NanUnlocker();\n}\n```\n\n<a name="api_nan_unlocker"></a>\n### NanUnlocker()\n\nThe introduction of `isolate` references for many V8 calls in Node 0.11 makes `NanUnlocker()` necessary, use it in place of `Unlocker unlocker`:\n\n```c++\nNAN_METHOD(Foo::Bar) {\n  NanLocker();\n  ...\n  NanUnlocker();\n}\n```\n\n<a name="api_nan_get_internal_field_pointer"></a>\n### void * NanGetInternalFieldPointer(Handle&lt;Object&gt;, int)\n\nGets a pointer to the internal field with at `index` from a V8 `Object` handle.\n\n```c++\nLocal<Object> obj;\n...\nNanGetInternalFieldPointer(obj, 0);\n```\n<a name="api_nan_set_internal_field_pointer"></a>\n### void NanSetInternalFieldPointer(Handle&lt;Object&gt;, int, void *)\n\nSets the value of the internal field at `index` on a V8 `Object` handle.\n\n```c++\nstatic Persistent<Function> dataWrapperCtor;\n...\nLocal<Object> wrapper = NanPersistentToLocal(dataWrapperCtor)->NewInstance();\nNanSetInternalFieldPointer(wrapper, 0, this);\n```\n\n<a name="api_nan_object_wrap_handle"></a>\n### Local&lt;Object&gt; NanObjectWrapHandle(Object)\n\nWhen you want to fetch the V8 object handle from a native object you\'ve wrapped with Node\'s `ObjectWrap`, you should use `NanObjectWrapHandle`:\n\n```c++\nNanObjectWrapHandle(iterator)->Get(String::NewSymbol("end"))\n```\n\n<a name="api_nan_make_weak"></a>\n### NanMakeWeak(Persistent&lt;T&gt;, parameter, callback)\n\nMake a persistent reference weak.\n\n<a name="api_nan_symbol"></a>\n### String NanSymbol(char *)\n\nThis isn\'t strictly about compatibility, it\'s just an easier way to create string symbol objects (i.e. `String::NewSymbol(x)`), for getting and setting object properties, or names of objects.\n\n```c++\nbool foo = false;\nif (obj->Has(NanSymbol("foo")))\n  foo = optionsObj->Get(NanSymbol("foo"))->BooleanValue()\n```\n\n<a name="api_nan_get_pointer_safe"></a>\n### Type NanGetPointerSafe(Type *[, Type])\n\nA helper for getting values from optional pointers. If the pointer is `NULL`, the function returns the optional default value, which defaults to `0`.  Otherwise, the function returns the value the pointer points to.\n\n```c++\nchar *plugh(uint32_t *optional) {\n  char res[] = "xyzzy";\n  uint32_t param = NanGetPointerSafe<uint32_t>(optional, 0x1337);\n  switch (param) {\n    ...\n  }\n  NanSetPointerSafe<uint32_t>(optional, 0xDEADBEEF);\n}  \n```\n\n<a name="api_nan_set_pointer_safe"></a>\n### bool NanSetPointerSafe(Type *, Type)\n\nA helper for setting optional argument pointers. If the pointer is `NULL`, the function simply return `false`.  Otherwise, the value is assigned to the variable the pointer points to.\n\n```c++\nconst char *plugh(size_t *outputsize) {\n  char res[] = "xyzzy";\n  if !(NanSetPointerSafe<size_t>(outputsize, strlen(res) + 1)) {\n    ...\n  }\n\n  ...\n}\n```\n\n<a name="api_nan_raw_string"></a>\n### void* NanRawString(Handle&lt;Value&gt;, enum Nan::Encoding, size_t *, void *, size_t, int)\n\nWhen you want to convert a V8 `String` to a `char*` buffer, use `NanRawString`. You have to supply an encoding as well as a pointer to a variable that will be assigned the number of bytes in the returned string. It is also possible to supply a buffer and its length to the function in order not to have a new buffer allocated. The final argument allows setting `String::WriteOptions`.\nJust remember that you\'ll end up with an object that you\'ll need to `delete[]` at some point unless you supply your own buffer:\n\n```c++\nsize_t count;\nvoid* decoded = NanRawString(args[1], Nan::BASE64, &count, NULL, 0, String::HINT_MANY_WRITES_EXPECTED);\nchar param_copy[count];\nmemcpy(param_copy, decoded, count);\ndelete[] decoded;\n```\n\n<a name="api_nan_c_string"></a>\n### char* NanCString(Handle&lt;Value&gt;, size_t *[, char *, size_t, int])\n\nWhen you want to convert a V8 `String` to a null-terminated C `char*` use `NanCString`. The resulting `char*` will be UTF-8-encoded, and you need to supply a pointer to a variable that will be assigned the number of bytes in the returned string. It is also possible to supply a buffer and its length to the function in order not to have a new buffer allocated. The final argument allows optionally setting `String::WriteOptions`, which default to `v8::String::NO_OPTIONS`.\nJust remember that you\'ll end up with an object that you\'ll need to `delete[]` at some point unless you supply your own buffer:\n\n```c++\nsize_t count;\nchar* name = NanCString(args[0], &count);\n```\n\n<a name="api_nan_from_v8_string"></a>\n### char* NanFromV8String(Handle&lt;Value&gt;[, enum Nan::Encoding, size_t *, char *, size_t, int])\n\nA convenience function that uses `NanRawString()` to convert a V8 `String` to a `char*`. Defaults to UTF8 encoding and no null-termination.\n\n```c++\nsize_t count;\nchar* name = NanFromV8String(args[0]);\n```\n\n<a name="api_nan_boolean_option_value"></a>\n### bool NanBooleanOptionValue(Handle&lt;Value&gt;, Handle&lt;String&gt;[, bool])\n\nWhen you have an "options" object that you need to fetch properties from, boolean options can be fetched with this pair. They check first if the object exists (`IsEmpty`), then if the object has the given property (`Has`) then they get and convert/coerce the property to a `bool`.\n\nThe optional last parameter is the *default* value, which is `false` if left off:\n\n```c++\n// `foo` is false unless the user supplies a truthy value for it\nbool foo = NanBooleanOptionValue(optionsObj, NanSymbol("foo"));\n// `bar` is true unless the user supplies a falsy value for it\nbool bar = NanBooleanOptionValueDefTrue(optionsObj, NanSymbol("bar"), true);\n```\n\n<a name="api_nan_uint32_option_value"></a>\n### uint32_t NanUInt32OptionValue(Handle&lt;Value&gt;, Handle&lt;String&gt;, uint32_t)\n\nSimilar to `NanBooleanOptionValue`, use `NanUInt32OptionValue` to fetch an integer option from your options object. Can be any kind of JavaScript `Number` and it will be coerced to an unsigned 32-bit integer.\n\nRequires all 3 arguments as a default is not optional:\n\n```c++\nuint32_t count = NanUInt32OptionValue(optionsObj, NanSymbol("count"), 1024);\n```\n\n<a name="api_nan_error"></a>\n### NanError(message), NanTypeError(message), NanRangeError(message)\n\nFor making `Error`, `TypeError` and `RangeError` objects.\n\n```c++\nLocal<Value> res = NanError("you must supply a callback argument");\n```\n\n<a name="api_nan_throw_error"></a>\n### NanThrowError(message), NanThrowTypeError(message), NanThrowRangeError(message), NanThrowError(Local&lt;Value&gt;), NanThrowError(Local&lt;Value&gt;, int)\n\nFor throwing `Error`, `TypeError` and `RangeError` objects. You should `return` this call:\n\n```c++\nreturn NanThrowError("you must supply a callback argument");\n```\n\nCan also handle any custom object you may want to throw. If used with the error code argument, it will add the supplied error code to the error object as a property called `code`.\n\n<a name="api_nan_new_buffer_handle"></a>\n### Local&lt;Object&gt; NanNewBufferHandle(char *, uint32_t), Local&lt;Object&gt; NanNewBufferHandle(uint32_t)\n\nThe `Buffer` API has changed a little in Node 0.11, this helper provides consistent access to `Buffer` creation:\n\n```c++\nNanNewBufferHandle((char*)value.data(), value.size());\n```\n\nCan also be used to initialize a `Buffer` with just a `size` argument.\n\nCan also be supplied with a `NAN_WEAK_CALLBACK` and a hint for the garbage collector, when dealing with weak references.\n\n<a name="api_nan_buffer_use"></a>\n### Local&lt;Object&gt; NanBufferUse(char*, uint32_t)\n\n`Buffer::New(char*, uint32_t)` prior to 0.11 would make a copy of the data.\nWhile it was possible to get around this, it required a shim by passing a\ncallback. So the new API `Buffer::Use(char*, uint32_t)` was introduced to remove\nneeding to use this shim.\n\n`NanBufferUse` uses the `char*` passed as the backing data, and will free the\nmemory automatically when the weak callback is called. Keep this in mind, as\ncareless use can lead to "double free or corruption" and other cryptic failures.\n\n<a name="api_nan_has_instance"></a>\n### bool NanHasInstance(Persistent&lt;FunctionTemplate&gt;&, Handle&lt;Value&gt;)\n\nCan be used to check the type of an object to determine it is of a particular class you have already defined and have a `Persistent<FunctionTemplate>` handle for.\n\n<a name="api_nan_persistent_to_local"></a>\n### Local&lt;Type&gt; NanPersistentToLocal(Persistent&lt;Type&gt;&)\n\nAside from `FunctionCallbackInfo`, the biggest and most painful change to V8 in Node 0.11 is the many restrictions now placed on `Persistent` handles. They are difficult to assign and difficult to fetch the original value out of.\n\nUse `NanPersistentToLocal` to convert a `Persistent` handle back to a `Local` handle.\n\n```c++\nLocal<Object> handle = NanPersistentToLocal(persistentHandle);\n```\n\n<a href="#api_nan_new_context_handle">\n### Local&lt;Context&gt; NanNewContextHandle([ExtensionConfiguration*, Handle&lt;ObjectTemplate&gt;, Handle&lt;Value&gt;])\nCreates a new `Local<Context>` handle.\n\n```c++\nLocal<FunctionTemplate> ftmpl = FunctionTemplate::New();\nLocal<ObjectTemplate> otmpl = ftmpl->InstanceTemplate();\nLocal<Context> ctx =  NanNewContextHandle(NULL, otmpl);\n```\n\n<a name="api_nan_dispose"></a>\n### void NanDispose(Persistent&lt;T&gt; &)\n\nUse `NanDispose` to dispose a `Persistent` handle.\n\n```c++\nNanDispose(persistentHandle);\n```\n\n<a name="api_nan_assign_persistent"></a>\n### NanAssignPersistent(type, handle, object)\n\nUse `NanAssignPersistent` to assign a non-`Persistent` handle to a `Persistent` one. You can no longer just declare a `Persistent` handle and assign directly to it later, you have to `Reset` it in Node 0.11, so this makes it easier.\n\nIn general it is now better to place anything you want to protect from V8\'s garbage collector as properties of a generic `Object` and then assign that to a `Persistent`. This works in older versions of Node also if you use `NanAssignPersistent`:\n\n```c++\nPersistent<Object> persistentHandle;\n\n...\n\nLocal<Object> obj = Object::New();\nobj->Set(NanSymbol("key"), keyHandle); // where keyHandle might be a Local<String>\nNanAssignPersistent(Object, persistentHandle, obj)\n```\n\n<a name="api_nan_init_persistent"></a>\n### NanInitPersistent(type, name, object)\n\nUser `NanInitPersistent` to declare and initialize a new `Persistent` with the supplied object. The assignment operator for `Persistent` is no longer public in Node 0.11, so this macro makes it easier to declare and initializing a new `Persistent`. See <a href="#api_nan_assign_persistent"><b><code>NanAssignPersistent</code></b></a> for more information.\n\n```c++\nLocal<Object> obj = Object::New();\nobj->Set(NanSymbol("key"), keyHandle); // where keyHandle might be a Local<String>\nNanInitPersistent(Object, persistentHandle, obj);\n```\n\n<a name="api_nan_callback"></a>\n### NanCallback\n\nBecause of the difficulties imposed by the changes to `Persistent` handles in V8 in Node 0.11, creating `Persistent` versions of your `Handle<Function>` is annoyingly tricky. `NanCallback` makes it easier by taking your handle, making it persistent until the `NanCallback` is deleted and even providing a handy `Call()` method to fetch and execute the callback `Function`.\n\n```c++\nLocal<Function> callbackHandle = args[0].As<Function>();\nNanCallback *callback = new NanCallback(callbackHandle);\n// pass `callback` around and it\'s safe from GC until you:\ndelete callback;\n```\n\nYou can execute the callback like so:\n\n```c++\n// no arguments:\ncallback->Call(0, NULL);\n\n// an error argument:\nHandle<Value> argv[] = {\n  Exception::Error(String::New("fail!"))\n};\ncallback->Call(1, argv);\n\n// a success argument:\nHandle<Value> argv[] = {\n  Null(),\n  String::New("w00t!")\n};\ncallback->Call(2, argv);\n```\n\n`NanCallback` also has a `Local<Function> GetCallback()` method that you can use\nto fetch a local handle to the underlying callback function, as well  as a\n`void SetFunction(Handle<Function>)` for setting the callback on the\n`NanCallback`.  Additionally a generic constructor is available for using\n`NanCallback` without performing heap allocations.\n\n<a name="api_nan_async_worker"></a>\n### NanAsyncWorker\n\n`NanAsyncWorker` is an abstract class that you can subclass to have much of the annoying async queuing and handling taken care of for you. It can even store arbitrary V8 objects for you and have them persist while the async work is in progress.\n\nSee a rough outline of the implementation:\n\n```c++\nclass NanAsyncWorker {\npublic:\n  NanAsyncWorker (NanCallback *callback);\n\n  // Clean up persistent handles and delete the *callback\n  virtual ~NanAsyncWorker ();\n\n  // Check the `char *errmsg` property and call HandleOKCallback()\n  // or HandleErrorCallback depending on whether it has been set or not\n  virtual void WorkComplete ();\n\n  // You must implement this to do some async work. If there is an\n  // error then allocate `errmsg` to to a message and the callback will\n  // be passed that string in an Error object\n  virtual void Execute ();\n\n  // Save a V8 object in a Persistent handle to protect it from GC\n  void SavePersistent(const char *key, Local<Object> &obj);\n\n  // Fetch a stored V8 object (don\'t call from within `Execute()`)\n  Local<Object> GetFromPersistent(const char *key);\n\nprotected:\n  // Set this if there is an error, otherwise it\'s NULL\n  const char *errmsg;\n\n  // Default implementation calls the callback function with no arguments.\n  // Override this to return meaningful data\n  virtual void HandleOKCallback ();\n\n  // Default implementation calls the callback function with an Error object\n  // wrapping the `errmsg` string\n  virtual void HandleErrorCallback ();\n};\n```\n\n<a name="api_nan_async_queue_worker"></a>\n### NanAsyncQueueWorker(NanAsyncWorker *)\n\n`NanAsyncQueueWorker` will run a `NanAsyncWorker` asynchronously via libuv. Both the *execute* and *after_work* steps are taken care of for you&mdash;most of the logic for this is embedded in `NanAsyncWorker`.\n\n### Contributors\n\nNAN is only possible due to the excellent work of the following contributors:\n\n<table><tbody>\n<tr><th align="left">Rod Vagg</th><td><a href="https://github.com/rvagg">GitHub/rvagg</a></td><td><a href="http://twitter.com/rvagg">Twitter/@rvagg</a></td></tr>\n<tr><th align="left">Benjamin Byholm</th><td><a href="https://github.com/kkoopa/">GitHub/kkoopa</a></td></tr>\n<tr><th align="left">Trevor Norris</th><td><a href="https://github.com/trevnorris">GitHub/trevnorris</a></td><td><a href="http://twitter.com/trevnorris">Twitter/@trevnorris</a></td></tr>\n<tr><th align="left">Nathan Rajlich</th><td><a href="https://github.com/TooTallNate">GitHub/TooTallNate</a></td><td><a href="http://twitter.com/TooTallNate">Twitter/@TooTallNate</a></td></tr>\n<tr><th align="left">Brett Lawson</th><td><a href="https://github.com/brett19">GitHub/brett19</a></td><td><a href="http://twitter.com/brett19x">Twitter/@brett19x</a></td></tr>\n<tr><th align="left">Ben Noordhuis</th><td><a href="https://github.com/bnoordhuis">GitHub/bnoordhuis</a></td><td><a href="http://twitter.com/bnoordhuis">Twitter/@bnoordhuis</a></td></tr>\n</tbody></table>\n\nLicence &amp; copyright\n-----------------------\n\nCopyright (c) 2013 NAN contributors (listed above).\n\nNative Abstractions for Node.js is licensed under an MIT +no-false-attribs license. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.\n',
+393 silly resolved     readmeFilename: 'README.md',
+393 silly resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+393 silly resolved     homepage: 'https://github.com/rvagg/nan',
+393 silly resolved     _id: 'nan@0.7.1',
+393 silly resolved     _from: 'nan@~0.7.0' } ]
+394 info install bindings@1.1.1 into C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+395 info install debug@0.7.4 into C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+396 info install nan@0.7.1 into C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+397 info installOne bindings@1.1.1
+398 info installOne debug@0.7.4
+399 info installOne nan@0.7.1
+400 info C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings unbuild
+401 info C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug unbuild
+402 info C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan unbuild
+403 verbose tar unpack C:\Users\Jonathan\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz
+404 silly lockFile 078e1a7d-ules-geoip-node-modules-bindings tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings
+405 verbose lock tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings C:\Users\Jonathan\AppData\Roaming\npm-cache\078e1a7d-ules-geoip-node-modules-bindings.lock
+406 silly lockFile 7184b0a7-cache-bindings-1-1-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz
+407 verbose lock tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz C:\Users\Jonathan\AppData\Roaming\npm-cache\7184b0a7-cache-bindings-1-1-1-package-tgz.lock
+408 verbose tar unpack C:\Users\Jonathan\AppData\Roaming\npm-cache\debug\0.7.4\package.tgz
+409 silly lockFile 2456ba26-modules-geoip-node-modules-debug tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug
+410 verbose lock tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug C:\Users\Jonathan\AppData\Roaming\npm-cache\2456ba26-modules-geoip-node-modules-debug.lock
+411 silly lockFile 746d1609-pm-cache-debug-0-7-4-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\debug\0.7.4\package.tgz
+412 verbose lock tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\debug\0.7.4\package.tgz C:\Users\Jonathan\AppData\Roaming\npm-cache\746d1609-pm-cache-debug-0-7-4-package-tgz.lock
+413 verbose tar unpack C:\Users\Jonathan\AppData\Roaming\npm-cache\nan\0.7.1\package.tgz
+414 silly lockFile ed474a8f-e-modules-geoip-node-modules-nan tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan
+415 verbose lock tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan C:\Users\Jonathan\AppData\Roaming\npm-cache\ed474a8f-e-modules-geoip-node-modules-nan.lock
+416 silly lockFile 8e679380--npm-cache-nan-0-7-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\nan\0.7.1\package.tgz
+417 verbose lock tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\nan\0.7.1\package.tgz C:\Users\Jonathan\AppData\Roaming\npm-cache\8e679380--npm-cache-nan-0-7-1-package-tgz.lock
+418 silly gunzTarPerm modes [ '755', '644' ]
+419 silly gunzTarPerm modes [ '755', '644' ]
+420 silly gunzTarPerm modes [ '755', '644' ]
+421 silly gunzTarPerm extractEntry package.json
+422 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+423 silly gunzTarPerm extractEntry package.json
+424 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+425 silly gunzTarPerm extractEntry package.json
+426 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+427 silly gunzTarPerm extractEntry debug.js
+428 silly gunzTarPerm modified mode [ 'debug.js', 438, 420 ]
+429 silly gunzTarPerm extractEntry index.js
+430 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+431 silly gunzTarPerm extractEntry README.md
+432 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+433 silly gunzTarPerm extractEntry bindings.js
+434 silly gunzTarPerm modified mode [ 'bindings.js', 438, 420 ]
+435 silly gunzTarPerm extractEntry README.md
+436 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+437 silly gunzTarPerm extractEntry LICENSE
+438 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+439 silly gunzTarPerm extractEntry include_dirs.js
+440 silly gunzTarPerm modified mode [ 'include_dirs.js', 438, 420 ]
+441 silly gunzTarPerm extractEntry .dntrc
+442 silly gunzTarPerm modified mode [ '.dntrc', 438, 420 ]
+443 silly gunzTarPerm extractEntry build/config.gypi
+444 silly gunzTarPerm modified mode [ 'build/config.gypi', 438, 420 ]
+445 silly gunzTarPerm extractEntry nan.h
+446 silly gunzTarPerm modified mode [ 'nan.h', 438, 420 ]
+447 silly gunzTarPerm extractEntry lib/debug.js
+448 silly gunzTarPerm modified mode [ 'lib/debug.js', 438, 420 ]
+449 silly gunzTarPerm extractEntry Readme.md
+450 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+451 silly lockFile 078e1a7d-ules-geoip-node-modules-bindings tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings
+452 silly lockFile 078e1a7d-ules-geoip-node-modules-bindings tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings
+453 silly lockFile 7184b0a7-cache-bindings-1-1-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz
+454 silly lockFile 7184b0a7-cache-bindings-1-1-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\bindings\1.1.1\package.tgz
+455 info preinstall bindings@1.1.1
+456 verbose readDependencies using package.json deps
+457 verbose readDependencies using package.json deps
+458 silly resolved []
+459 verbose about to build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings
+460 info build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\bindings
+461 verbose linkStuff [ false,
+461 verbose linkStuff   false,
+461 verbose linkStuff   false,
+461 verbose linkStuff   'C:\\Users\\Jonathan\\Desktop\\Node.js\\InstagramLocation\\node_modules\\geoip\\node_modules' ]
+462 info linkStuff bindings@1.1.1
+463 verbose linkBins bindings@1.1.1
+464 verbose linkMans bindings@1.1.1
+465 verbose rebuildBundles bindings@1.1.1
+466 silly lockFile 2456ba26-modules-geoip-node-modules-debug tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug
+467 silly lockFile 2456ba26-modules-geoip-node-modules-debug tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug
+468 info install bindings@1.1.1
+469 silly lockFile 746d1609-pm-cache-debug-0-7-4-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\debug\0.7.4\package.tgz
+470 silly lockFile 746d1609-pm-cache-debug-0-7-4-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\debug\0.7.4\package.tgz
+471 info postinstall bindings@1.1.1
+472 info preinstall debug@0.7.4
+473 verbose readDependencies using package.json deps
+474 verbose readDependencies using package.json deps
+475 silly resolved []
+476 verbose about to build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug
+477 info build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\debug
+478 verbose linkStuff [ false,
+478 verbose linkStuff   false,
+478 verbose linkStuff   false,
+478 verbose linkStuff   'C:\\Users\\Jonathan\\Desktop\\Node.js\\InstagramLocation\\node_modules\\geoip\\node_modules' ]
+479 info linkStuff debug@0.7.4
+480 verbose linkBins debug@0.7.4
+481 verbose linkMans debug@0.7.4
+482 verbose rebuildBundles debug@0.7.4
+483 info install debug@0.7.4
+484 info postinstall debug@0.7.4
+485 silly lockFile ed474a8f-e-modules-geoip-node-modules-nan tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan
+486 silly lockFile ed474a8f-e-modules-geoip-node-modules-nan tar://C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan
+487 silly lockFile 8e679380--npm-cache-nan-0-7-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\nan\0.7.1\package.tgz
+488 silly lockFile 8e679380--npm-cache-nan-0-7-1-package-tgz tar://C:\Users\Jonathan\AppData\Roaming\npm-cache\nan\0.7.1\package.tgz
+489 info preinstall nan@0.7.1
+490 verbose readDependencies using package.json deps
+491 verbose readDependencies using package.json deps
+492 silly resolved []
+493 verbose about to build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan
+494 info build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip\node_modules\nan
+495 verbose linkStuff [ false,
+495 verbose linkStuff   false,
+495 verbose linkStuff   false,
+495 verbose linkStuff   'C:\\Users\\Jonathan\\Desktop\\Node.js\\InstagramLocation\\node_modules\\geoip\\node_modules' ]
+496 info linkStuff nan@0.7.1
+497 verbose linkBins nan@0.7.1
+498 verbose linkMans nan@0.7.1
+499 verbose rebuildBundles nan@0.7.1
+500 info install nan@0.7.1
+501 info postinstall nan@0.7.1
+502 verbose about to build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+503 info build C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip
+504 verbose linkStuff [ false,
+504 verbose linkStuff   false,
+504 verbose linkStuff   false,
+504 verbose linkStuff   'C:\\Users\\Jonathan\\Desktop\\Node.js\\InstagramLocation\\node_modules' ]
+505 info linkStuff geoip@0.5.1
+506 verbose linkBins geoip@0.5.1
+507 verbose linkMans geoip@0.5.1
+508 verbose rebuildBundles geoip@0.5.1
+509 verbose rebuildBundles [ 'bindings', 'debug', 'nan' ]
+510 info install geoip@0.5.1
+511 verbose unsafe-perm in lifecycle true
+512 info geoip@0.5.1 Failed to exec install script
+513 info C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules\geoip unbuild
+514 info preuninstall geoip@0.5.1
+515 info uninstall geoip@0.5.1
+516 verbose true,C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules,C:\Users\Jonathan\Desktop\Node.js\InstagramLocation\node_modules unbuild geoip@0.5.1
+517 info postuninstall geoip@0.5.1
+518 error geoip@0.5.1 install: `node-gyp rebuild`
+518 error Exit status 1
+519 error Failed at the geoip@0.5.1 install script.
+519 error This is most likely a problem with the geoip package,
+519 error not with npm itself.
+519 error Tell the author that this fails on your system:
+519 error     node-gyp rebuild
+519 error You can get their info via:
+519 error     npm owner ls geoip
+519 error There is likely additional logging output above.
+520 error System Windows_NT 6.2.9200
+521 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "geoip"
+522 error cwd C:\Users\Jonathan\Desktop\Node.js\InstagramLocation
+523 error node -v v0.10.24
+524 error npm -v 1.3.21
+525 error code ELIFECYCLE
+526 verbose exit [ 1, true ]
