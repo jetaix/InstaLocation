@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+
+<title></title>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+<script type="text/javascript">
+
+			
+
+</script>
+</head>
+<body>
+
+	<div id='map'></div>
+
+<script>
+	
+	
+
+	if(navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position){
+		  	var lat = position.coords.latitude;
+		  	var lng = position.coords.longitude;
+			var alt = position.coords.altitude;
+
+			var coor = {lat : lat, lng : lng, alt : alt};
+
+			var map = L.mapbox.map('map', 'jonathanetaix.h37glao7')
+				.setView([coor.lat, coor.lng], 15);
+
+			var geoJson = {
+			    type: 'FeatureCollection',
+			    features: [
+			    {
+			        "type": 'Feature',
+			        "properties": {
+			            "title": 'Jonathan Etaix',
+
+			        },
+			        "geometry": {
+			            "type": 'Point',
+			            "coordinates": [coor.lng, coor.lat]
+			        }
+			    },
+
+			    {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "juliankillz"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.34983, 48.864075]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "onceuponatimegbg"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.357283333, 48.860591667]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "rodrigohdezo"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.35244751, 48.860592808]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "camiliavontease"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.344003333, 48.866178333]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "mazunte75"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.35244751, 48.860592808]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "rodrigohdezo"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.35244751, 48.860592808]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "camillelacarotte"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.352239153, 48.864512703]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "marienadiag"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.357333333, 48.858666667]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "raai89"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.359528333, 48.867053333]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "mrslyloo"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.34393, 48.86422]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "hugobedesmouches"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.344331145, 48.866322161]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "lovetessa"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.361352444, 48.860370467]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "feliboettcher"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.351891344, 48.860039939]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "mrslyloo"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.343796667, 48.864313333]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "mrslyloo"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.343938333, 48.864371667]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "melogmelog"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.351939368, 48.868411183]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "juliankillz"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.350013333, 48.864045]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "mrslyloo"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.343896667, 48.864361667]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "mariavasilenko"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.351403544, 48.863540366]
+			        }
+			    }, {
+			        "type": "Feature",
+			        "properties": {
+			            "title": "morganpreleur"
+			        },
+			        "geometry": {
+			            "type": "Point",
+			            "coordinates": [2.34705, 48.860308333]
+			        }
+			    }
+
+			    ]
+			};
+
+			map.markerLayer.setGeoJSON(geoJson);
+			map.markerLayer.on('mouseover', function(e) {
+			    e.layer.openPopup();
+			});
+			map.markerLayer.on('mouseout', function(e) {
+			    e.layer.closePopup();
+			});
+		});
+	} else {
+		alert('error');
+	}
+
+</script>
+
+</body>
+</html>
