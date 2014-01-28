@@ -1,4 +1,5 @@
 var express = require('express');
+var request = require('request');
 var routes = require('./routes');
 var user = require('./routes/user');
 var userInfo = require('./routes/userInfo');
@@ -7,7 +8,9 @@ var mediaSearch = require('./routes/mediaSearch');
 var map = require('./routes/map');
 var http = require('http');
 var path = require('path');
-var instagram = require('instagram-node-lib');
+var instagram = require('instagram-node-lib'),
+ JSONStream = require('JSONStream')
+  , es = require('event-stream');
 
 var app = express();
 
@@ -37,11 +40,7 @@ app.get('/userSearch', userSearch.userSearch(instagram));
 
 app.get('/userInfo', userInfo.userInfo(instagram));
 
-app.get('/mediaSearch', mediaSearch.mediaSearch(instagram));
-
-app.get('/map', map.map());
-
-	
+app.get('/mediaSearch/:city', mediaSearch.mediaSearch(instagram, request, JSONStream, es));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
