@@ -5,26 +5,22 @@ exports.mediaSearch = function(instagram, request, es, JSONStream){
 
 	var city = req.params.city;
 
-	/*request('http://maps.googleapis.com/maps/api/geocode/json?address=' + city + '&sensor=false', function (error, response, body) {
+	request('http://maps.googleapis.com/maps/api/geocode/json?address=' + city + '&sensor=false', function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
-	   // console.log(body.results) // Print the google web page.
-	   res.json({ msgId: body, toto : body.results });
-	   
 
-	  }
-	});*/
+	  	var dataResult = JSON.parse(body);
+		var latitude = dataResult.results[0].geometry.location.lat;
+		var longitude = dataResult.results[0].geometry.location.lng; 
 
-	
-
+		
 		instagram.media.search({
-			lat: 45.764043,
-			lng: 4.835659,
+			lat: latitude,
+			lng: longitude,
+
 			complete:function(data){
 				var dataLength = data.length;
 				var content = [];
 				var mapping = [];
-				
-
 
 				for (var i = 0; i < dataLength; i++) {
 
@@ -32,7 +28,13 @@ exports.mediaSearch = function(instagram, request, es, JSONStream){
 					var current = new Date();
 					var date = new Date(created_time * 1000);
 					var test = date
+					var listComment = [];
 
+					listComment = [];
+					for(var j = 0 ; j < data[i].comments.data.length ; j++){
+						listComment[j] = data[i].comments.data[j];
+					}
+					//j = 0;
 				    content.push({
 				    	
 			    		image: {
@@ -47,7 +49,7 @@ exports.mediaSearch = function(instagram, request, es, JSONStream){
 			    			dateYear : date.getFullYear(),
 			    			dateDay : date.getDate(),
 			    			iconUrl: data[i].images.thumbnail.url,
-
+			    			listComment: listComment
 			    		}
 				    	
 				    });
@@ -85,10 +87,14 @@ exports.mediaSearch = function(instagram, request, es, JSONStream){
 
 
 				//res.json(jsonArr);
-				res.render('mediaSearch', {dataLength : dataLength, mapping : mapping, content : content});
+				res.render('mediaSearch', {dataLength : dataLength, mapping : mapping, content : content, latitude : latitude, longitude : longitude});
 				//res.json(jsonArr);
 			}
-		});
+		});	   
+
+	  }
+	});
+
 	}
 
 };

@@ -52,7 +52,12 @@
             <div>Nb like : <%= content[i].image.nbLike %></div>
             <div>Nb comments : <%= content[i].image.nbComment %></div>
             <div>Date : <%= content[i].image.dateYear %> - <%= content[i].image.dateMonth %> - <%= content[i].image.dateDay %></div>
-
+            <div>
+            	Comments :
+            	<% for(var j=0; j < content[i].image.listComment.length; j++) {%>
+            	<p>* <%=  content[i].image.listComment[j].text %></p>
+            	<% } %>
+            </div>
 
         </div>
         
@@ -64,7 +69,7 @@
 <script>
 console.log(new Date().getTime());
 var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
-    .setView([48.86336, 2.353081], 15);
+    .setView([<%= latitude %>, <%= longitude %>], 15);
 
 var geoJson = <%- JSON.stringify(mapping) %> ;
 
