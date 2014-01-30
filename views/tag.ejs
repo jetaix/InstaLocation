@@ -1,3 +1,5 @@
-<div>
-	<%= result %>
-</div>
+<% for(var i=0; i<content.length; i++) { %>
+<div>By : <a href="http://instagram.com/<%= content[i].image.username %>" target="_blank"><img class="img-user" src="<%= content[i].image.imgUser %>" width="30" class="dot"></a></div>	
+<div><a href="<%= content[i].image.linkImg %>" target="_blank"><img class="img-user" src="<%= content[i].image.images %>" width="300"></a></div>
+
+<% } %>

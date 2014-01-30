@@ -7,7 +7,9 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+<link href='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.css' rel='stylesheet' />
 
 <style>
   body { margin:0; padding:0; }
@@ -38,11 +40,18 @@
 </head>
 <body>
 <div id="sidebar">
+	<div id="form">
+		<form method="post" action="/mediaSearch">
+			<input type="text" name="request" value="" placeholder="Tape your key">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
 	<% for(var i=0; i<dataLength; i++) { %>
 
         <div class="capture" id="<%= content[i].image.username %>">
 
 			<p>
+				<a href="http://instagram.com/<%= content[i].image.username %>" target="_blank">
 				<img class="img-user" src="<%= content[i].image.imgUser %>" width="30">
 				<%= content[i].image.fullname %>
 			</p>
@@ -50,14 +59,25 @@
             	<img src="<%= content[i].image.images %>" width="150">
             </a>
             <div>Nb like : <%= content[i].image.nbLike %></div>
+            <div>Who ? : 
+				<% for(var j=0; j < content[i].image.listLike.length; j++) {%>
+            	<p>* <a href="http://instagram.com/<%=  content[i].image.listLike[j].username %>" target="_blank"><%=  content[i].image.listLike[j].username %></a></p>
+            	<% } %>
+            </div>
             <div>Nb comments : <%= content[i].image.nbComment %></div>
             <div>Date : <%= content[i].image.dateYear %> - <%= content[i].image.dateMonth %> - <%= content[i].image.dateDay %></div>
             <div>
             	Comments :
             	<% for(var j=0; j < content[i].image.listComment.length; j++) {%>
-            	<p>* <%=  content[i].image.listComment[j].text %></p>
+            	<p>
+	            	<a href="http://instagram.com/<%= content[i].image.listComment[j].from.username %>" target="_blank">
+	            		<img src="<%= content[i].image.listComment[j].from.profile_picture %>" alt="" width="20px" class="dot" />
+	            		<%= content[i].image.listComment[j].from.username %>
+	            	</a> : <%=  content[i].image.listComment[j].text %>
+            	</p>
             	<% } %>
             </div>
+
 
         </div>
         
@@ -70,6 +90,8 @@
 console.log(new Date().getTime());
 var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
     .setView([<%= latitude %>, <%= longitude %>], 15);
+
+L.control.locate().addTo(map);
 
 var geoJson = <%- JSON.stringify(mapping) %> ;
 
@@ -108,13 +130,10 @@ map.markerLayer.on('mouseover', function(e) {
 
 map.markerLayer.on('mouseout', function(e) {
 	var usernameMarker = e.layer.feature.properties.username;
-   e.layer.closePopup();    
+   e.layer.closePopup();
 });
 
-</script>
 
-<script type="text/javascript">
-	
 </script>
 
 </body>

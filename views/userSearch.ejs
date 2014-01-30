@@ -2,7 +2,7 @@
 <%
     for(var i = 0 ; i < dataLength ; i++) {
     %>
-
+    	<%- JSON.stringify(data) %>
     	<p><%= data[i].username %></p>
     	<p><a href="http://instagram.com/<%= data[i].username %>"><img src="<%= data[i].profile_picture %>" alt="<%= data[i].username %>" /></a></p>
 <% } %>

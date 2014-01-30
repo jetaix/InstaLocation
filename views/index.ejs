@@ -5,6 +5,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+<link href='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.css' rel='stylesheet' />
 
 <title><%= title %></title>
 <style>
@@ -29,7 +30,7 @@
 
 			var map = L.mapbox.map('map', 'jonathanetaix.h37glao7')
 				.setView([coor.lat, coor.lng], 15);
-
+				//L.control.locate().addTo(map);
 			var geoJson = {
 			    type: 'FeatureCollection',
 			    features: [{
@@ -57,7 +58,9 @@
 
 			map.markerLayer.setGeoJSON(geoJson);
 			map.markerLayer.on('mouseover', function(e) {
+
 			    e.layer.openPopup();
+			    console.log(e.latlng.lat + '-' + e.latlng.lng);
 			});
 			map.markerLayer.on('mouseout', function(e) {
 			    e.layer.closePopup();

@@ -1,9 +1,9 @@
 
-exports.mediaSearch = function(instagram, request, es, JSONStream){
+exports.mediaSearch = function(instagram, request){
 
 	return function(req, res){
 
-	var city = req.params.city;
+	var city = req.body.request;
 
 	request('http://maps.googleapis.com/maps/api/geocode/json?address=' + city + '&sensor=false', function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
@@ -27,10 +27,14 @@ exports.mediaSearch = function(instagram, request, es, JSONStream){
 					var created_time = data[i].created_time;
 					var current = new Date();
 					var date = new Date(created_time * 1000);
-					var test = date
 					var listComment = [];
 
-					listComment = [];
+					var listLike = [];
+
+					for(var t = 0 ; t < data[i].likes.data.length ; t++){
+						listLike[t] = data[i].likes.data[t];
+					}
+
 					for(var j = 0 ; j < data[i].comments.data.length ; j++){
 						listComment[j] = data[i].comments.data[j];
 					}
@@ -49,7 +53,8 @@ exports.mediaSearch = function(instagram, request, es, JSONStream){
 			    			dateYear : date.getFullYear(),
 			    			dateDay : date.getDate(),
 			    			iconUrl: data[i].images.thumbnail.url,
-			    			listComment: listComment
+			    			listComment: listComment,
+							listLike: listLike
 			    		}
 				    	
 				    });
